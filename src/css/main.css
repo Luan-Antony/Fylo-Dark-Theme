@@ -9,7 +9,8 @@
     width: 45%;
 }
 
-.get-started h1, p {
+.get-started h1,
+p {
     color: var(--white);
 }
 
@@ -33,13 +34,17 @@
 }
 
 .get-started .button {
-    padding: 17px 105px 17px 105px;
+    padding: 17px 105px;
     background: linear-gradient(to right, var(--cyan), var(--blue));
     color: var(--white);
     font-size: 16px;
     font-weight: 700;
     border-radius: 40px;
     margin-top: 20px;
+}
+
+.get-started .button:hover {
+    background: var(--cyan);
 }
 
 .main .features {
@@ -114,6 +119,24 @@
     padding-bottom: 5px;
 }
 
+.team .content .button img {
+    color: var(--cyan);
+}
+
+.team .content .button 
+,img {
+    transition: all 0.3s ease-in-out;
+}
+
+.team .content .button:hover {
+    color: var(--white);
+    border-bottom: 2px solid var(--white);
+}
+
+.team .content .button:hover img {
+    transform: translateX(5px);
+}
+
 
 /*-------------------------------------------------*/
 
@@ -126,6 +149,7 @@
     gap: 40px;
     position: relative;
     z-index: 2;
+    padding-bottom: 380px;
 }
 
 .comments .quote {
@@ -139,6 +163,7 @@
     width: 360px;
     height: 200px;
     padding: 35px;
+    border-radius: 5px;
     background-color: var(--dark-blue-testimonials);
 }
 
@@ -181,15 +206,79 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
     text-align: center;
+    position: absolute;
+    bottom: -2650px;
+    z-index: 2;
     background-color: var(--dark-blue-intro);
     padding: 60px;
-    margin: 100px 270px 10px 270px;
+    margin: 200px 340px 60px 340px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
 }
 
 .sing-up h1 {
     color: var(--white);
     font-size: 32px;
     font-weight: 700;
+}
+
+.sing-up p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    padding-top: 10px;
+    width: 650px;
+}
+
+.sing-up form {
+    padding-top: 30px;
+}
+
+.sing-up form input {
+    padding: 13px 270px 13px 13px;
+    border-radius: 40px;
+    margin-right: 10px;
+    background-color: var(--white);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.sing-up form a {
+    padding: 14px 35px;
+    border-radius: 40px;
+    color: var(--white);
+    background: linear-gradient(to top, var(--blue), var(--cyan));
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.sing-up form a:hover {
+    background: var(--cyan); /* Cor sólida ao passar o mouse */
+}
+
+
+/*-------------------------------------------------*/
+
+
+.footer {
+    background-color: var(--dark-blue-footer);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    height: 360px;
+    padding: 30px;
+    color: var(--white);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.footer .logo {
+    width: 100px;
+    height: 30px;
 }

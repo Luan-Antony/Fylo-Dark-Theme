@@ -1,184 +1,263 @@
-@media (max-width: 375px) {
-    html {
-        font-size: 10px;
-    }
-
-    h2 {
-        font-size: 25px;
-    }
-
-
-/* ----------------------------------------- */
-
-
+@media (max-width: 1024px) {
     .nav {
-        align-items: center;
-        padding: 20px;
-    }
-
-    .nav img {
-        width: 100px;
-
+        padding: 50px 40px;
     }
 
     .menu {
-        gap: 20px;
-        text-align: center;
+        gap: 40px;
     }
 
     .menu li {
-        width: 100%;
+        margin: 0 10px;
     }
 
     .menu li a {
-        font-size: 8px;
-        white-space: nowrap;
-    }
-
-
-/* ----------------------------------------- */
-
-
-    .hero {
-        background: var(--dark-blue-intro) url("../images/bg-curvy-desktop.svg") bottom no-repeat;
-        background-size: 100% 140px;
-    }
-
-    .hero img {
-        width: 305px;
-        height: 225px;
+        font-size: 15px;
     }
 
     .hero h2 {
-        width: 302px;
-        margin: 23px;
+        font-size: 28px;
+        max-width: 650px;
     }
 
     .hero p {
-        width: 292px;
-        font-size: 12px;
-        padding: 0 23px;
+        font-size: 18px;
+        max-width: 550px;
     }
 
-    .btn-start {
-        width: 242px;
-        padding: 18px 0;
+    .hero {
+        padding-bottom: 200px;
+        background-size: 150% auto;
     }
-
-
-/* ----------------------------------------- */
-
 
     .features {
-        grid-template-columns: 1fr;
-        gap: 87px 0px;
-        padding: 0 38px;
-        margin: 100px 0;
+        padding: 80px 40px;
+        gap: 60px 40px;
     }
-
-
-/* ----------------------------------------- */
-
 
     .description {
-        flex-direction: column;
-        padding: 0 0px;
-        margin: 0px;
+        padding: 60px 40px;
+        gap: 40px;
     }
 
-    .img img {
-        height: 215px;
-        margin: 0px 0px 32px 0px;
+    .description .text h2 {
+        font-size: 26px;
     }
-
-    .text {
-        width: 80%;
-    }
-
-
-/* ----------------------------------------- */
-
 
     .testimonials {
-        grid-template-columns: 1fr;
-        gap: 24px;
-        padding: 150px 22px;
+        padding: 80px 40px;
+        gap: 30px;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
 
-    .testimonial:first-child::before {
-        left: 4px;
+    .testimonials::before {
+        left: 40px;
+        top: 50px;
     }
-
-
-/* ----------------------------------------- */
-
 
     .sign-up {
         width: 90%;
-        padding: 30px 20px;
-        bottom: -80px;
+        padding: 35px;
     }
 
     .sign-up h2 {
+        font-size: 24px;
+    }
+
+    .sign-up form {
+        flex-direction: column;
+        gap: 15px;
+        align-items: stretch;
+    }
+
+    .sign-up form {
+        max-width: none;
+    }
+
+    .sign-up form .btn {
+        width: 100%;
+    }
+
+    footer {
+        padding: 180px 40px 30px 40px;
+    }
+}
+
+@media (max-width: 767px) {
+    .nav {
+        padding: 80px 50px;
+    }
+
+    .nav .logo img {
+        margin: 0 auto 20px auto;
+    }
+
+    .menu {
+        gap: 30px;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    .menu li a {
         font-size: 18px;
     }
 
-    form {
+    .hero {
+        padding: 30px 15px 150px 15px;
+        min-height: 70vh;
+        background: var(--dark-blue-intro) url("../images/bg-curvy-mobile.svg") bottom center no-repeat;
+        background-size: 100% auto;
+    }
+
+    .hero img {
+        margin-bottom: 20px;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .hero p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .btn-start {
+        padding: 15px 25px;
+        font-size: 14px;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+        padding: 60px 20px;
+        gap: 50px;
+    }
+
+    .feature img {
+        height: 70px;
+    }
+
+    .feature h3 {
+        font-size: 18px;
+    }
+
+    .feature p {
+        font-size: 14px;
+    }
+
+    .description {
         flex-direction: column;
-        gap: 15px;
+        padding: 60px 20px;
+        gap: 40px;
+        text-align: center;
     }
 
-    form .email {
+    .description .text {
         width: 100%;
-        height: 45px;
-        margin-right: 0;
     }
 
-    form .btn {
-        width: 100%;
-        height: 45px;
+    .description .text h2 {
+        font-size: 22px;
     }
 
+    .desc-link {
+        margin: 0 auto;
+    }
 
-/* ----------------------------------------- */
+    .testimonials {
+        grid-template-columns: 1fr;
+        padding: 120px 20px 60px 20px;
+        gap: 30px;
+    }
 
+    .testimonials::before {
+        left: 50%;
+        transform: translateX(-50%);
+        top: 60px;
+        width: 35px;
+        height: auto;
+    }
+
+    .testimonial {
+        padding: 25px 20px;
+    }
+
+    .profile img {
+        width: 28px;
+        height: 28px;
+    }
+
+    .profile-description h3 {
+        font-size: 11px;
+    }
+
+    .profile-description p {
+        font-size: 9px;
+    }
+
+    .sign-up {
+        padding: 30px 20px;
+        margin-top: -150px;
+    }
+
+    .sign-up h2 {
+        font-size: 20px;
+    }
+
+    .sign-up p {
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
 
     footer {
+        padding: 180px 20px 30px 20px;
         grid-template-columns: 1fr;
-        padding: 150px 27px 42px 27px;
-        column-gap: 0;
-        row-gap: 20px;
-        grid-template-areas:
-            "logo"
-            "location"
-            "contact"
-            "links"
-            "more-links"
-            "social-icons";
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
     }
 
-    .links, .more-links {
-        font-size: 16px;
+    footer .logo img {
+        grid-column: auto;
+        margin: 0 0 30px 0;
+    }
+
+    .footer-section {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .location {
+        max-width: 300px;
+    }
+
+    .links a,
+    .more-links a {
+        margin-top: 0;
     }
 
     .social-icons {
-        display: flex;
         justify-content: center;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 426px) {
+    .nav {
+        padding: 40px 20px;
     }
 
-    .social-icons i {
-        font-size: 18px;
+    .menu {
+        padding-top: 30px;
+        gap: 10px;
     }
 
-    .fa-facebook-f {
-        justify-self: end;
-    }
-
-    .fa-twitter {
-        justify-self: center;
-    }
-
-    .fa-intagram {
-        justify-self: start;
+    .nav, .menu {
+        flex-direction: column;
     }
 }
